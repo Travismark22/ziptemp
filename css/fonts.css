@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'PrometoW04';
+    src: url('../fonts/PrometoW04-Regular.woff2') format('woff2'),
+        url('../fonts/PrometoW04-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PrometoW02';
+    src: url('../fonts/PrometoW02-Bold.woff2') format('woff2'),
+        url('../fonts/PrometoW02-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BolsterBold';
+    src: url('../fonts/BolsterBold.woff2') format('woff2'),
+        url('../fonts/BolsterBold.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PrometoW04';
+    src: url('../fonts/PrometoW04-Bold.woff2') format('woff2'),
+        url('../fonts/PrometoW04-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PrometoW04';
+    src: url('../fonts/PrometoW04-Light.woff2') format('woff2'),
+        url('../fonts/PrometoW04-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+

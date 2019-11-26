@@ -1,0 +1,313 @@
+body {	
+  font-family: 'PrometoW04';
+  background: #000000;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.clear {
+  clear: both;
+}
+
+.hide-robot {
+  display: none;	
+}
+
+#page-wrapper {
+  max-width: 1920px;
+  margin: 0 auto; 
+  position: relative;
+  z-index: 1;
+  padding-bottom: 18vh;
+}
+
+@media (min-width: 768px) {  
+  #page-wrapper {
+    min-height: 700px;
+    height: 100vh;
+	padding-bottom: 0;
+  }
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+header {
+  padding: 20px;	
+}
+
+header .logo {
+  text-align: center;
+}
+
+@media (min-width: 768px) {  
+  header .logo {
+    float: left;	
+  }
+}
+
+header .logo img {
+  max-width: 190px;
+}
+
+header .contact {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {  
+  header .contact {
+    float: right;	
+	margin-top: 0;
+  }
+}
+
+header .contact a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'PrometoW04';
+  font-weight: bold;  
+}
+
+#main-content #countdown {
+  margin: 0 auto;
+  width: max-content;
+  margin-top: 50vh;
+}
+
+#main-content #countdown .countdown-div {
+  float: left;
+  margin-right: 15px;
+  text-align: center;
+}
+
+@media (min-width: 375px) {  
+  #main-content #countdown .countdown-div {
+    margin-right: 25px;  
+  }
+}
+
+@media (min-width: 768px) {  
+  #main-content #countdown .countdown-div {
+    margin-right: 50px;  
+  }
+}
+
+#main-content #countdown .countdown-div:last-child {
+  margin-right: 0;
+}
+
+#main-content #countdown .countdown-div .title {
+  font-family: 'BolsterBold';
+  font-size: 20px;
+}
+
+@media (min-width: 375px) {  
+  #main-content #countdown .countdown-div .title {
+	font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {  
+  #main-content #countdown .countdown-div .title {
+	font-size: 60px;
+  }
+}
+
+#main-content #countdown .countdown-div .text {
+  font-family: 'PrometoW04';
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (min-width: 375px) {  
+  #main-content #countdown .countdown-div .text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {  
+  #main-content #countdown .countdown-div .text {
+    font-size: 30px;
+  }
+}
+
+#main-content #countdown .countdown-div-secs {
+  width: 70px;	
+}
+
+#main-content #newsletter {
+  clear: both;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#main-content #newsletter .title {
+  font-family: 'PrometoW04';
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;  
+  letter-spacing: .1em;
+  margin-bottom: 15px;
+}
+
+#main-content #newsletter input[type="email"] {
+  width: 30%;
+  height: 30px;  
+  border-radius: 3px;
+}
+
+#main-content #newsletter .description {
+  padding: 5px;
+}
+
+#main-content #newsletter input[type="submit"] {
+  height: 36px;
+  background: #42CBCD;
+  border-radius: 3px;
+  color: #ffffff;
+  border: 0;
+  text-transform: uppercase;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  font-family: 'PrometoW04';
+  font-weight: 300;  
+}
+
+footer .left {
+  text-align: center;
+}
+
+@media (min-width: 768px) {  
+  footer .left {
+    float: left;	
+  }
+}
+
+footer button {
+  background: none;
+  color: #ffffff;  
+  font-size: 11px;
+  tex-transform: uppercase;
+  border: 0;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+footer button img {
+  max-width: 12px;
+}
+
+footer .right {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {  
+  footer .right {
+    float: right;
+    margin-top: 0px;	
+  }
+}
+
+#contact-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.6);  
+  z-index: 20;
+  display: none;
+}
+
+#contact-modal.show {
+  display: block;	
+}
+
+#contact-modal-form {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #000000;	
+  margin: 20px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 10vh;
+  border: 2px solid rgba(255,255,255,.3);
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+}
+
+#contact-modal-form input[type="text"],input[type="email"],textarea {
+  width: 100%;
+}
+
+#contact-modal-form input[type="text"],input[type="email"] {
+  height: 30px;
+}
+
+#contact-modal-form textarea {
+  height: 100px;	
+}
+
+#contact-modal-form .title {
+  font-size: 30px;
+  color: #42CBCD;
+  text-transform: uppercase;  
+  font-weight: bold;
+}
+
+#contact-modal-form .text,.label {
+  margin-top: 20px;
+  margin-bottom:5px;  
+}
+
+#contact-modal-form [type="submit"] {
+  background: #42CBCD;
+  border-radius: 3px;
+  color: #ffffff;
+  border: 0;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#contact-modal-form .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;  
+}
+
+#contact-modal-form .close-btn svg {
+  width: 30px;
+  height: 30px;
+  fill: #42CBCD !important; 
+  stroke: #42CBCD !important; 
+  cursor: pointer;
+}
+
+#contact-modal-form .status {
+  font-size: 16px;
+  margin-top: 20px;
+  color: red;
+}
